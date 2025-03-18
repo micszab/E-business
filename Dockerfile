@@ -33,7 +33,13 @@ RUN wget https://services.gradle.org/distributions/gradle-8.7-bin.zip -P /tmp \
 
 ENV PATH="/opt/gradle/gradle-8.7/bin:/opt/kotlinc/bin:${PATH}"
 
+# Check installation
 RUN python3 --version && \
     java -version && \
     kotlinc -version && \
     gradle --version
+
+WORKDIR /app
+COPY . /app
+
+CMD ["gradle", "run"]

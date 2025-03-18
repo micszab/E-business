@@ -1,0 +1,7 @@
+services:
+  kotlin-app:
+    build: .
+    container_name: kotlin-hello
+    volumes:
+      - .:/app
+    working_dir: /app
