@@ -1,0 +1,12 @@
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# Routes
+GET     /products                   controllers.ProductController.getAll
+GET     /products/category/:category controllers.ProductController.getByCategory(category: String)
+GET     /products/instock           controllers.ProductController.getInStock
+GET     /products/search            controllers.ProductController.search(query: String)
+GET     /products/:id               controllers.ProductController.getById(id: Int)
+POST    /products                   controllers.ProductController.add
+PUT     /products/:id               controllers.ProductController.update(id: Int)
+DELETE  /products/:id               controllers.ProductController.delete(id: Int)
