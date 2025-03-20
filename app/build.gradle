@@ -1,0 +1,51 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.20'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Kotlin
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+    
+    // JDA
+    implementation 'net.dv8tion:JDA:5.0.0-beta.20'
+
+    // Ktor client
+    implementation 'io.ktor:ktor-client-core:2.3.5'
+    implementation 'io.ktor:ktor-client-cio:2.3.5'
+    
+    // Discord API
+    implementation 'net.dv8tion:JDA:5.0.0-beta.8'
+    
+    // Logging
+    implementation 'ch.qos.logback:logback-classic:1.4.11'
+    
+    // Testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+application {
+    mainClass = 'com.example.AppKt'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// Use JVM Toolchain to ensure Java and Kotlin use the same target
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+kotlin {
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
