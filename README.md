@@ -16,7 +16,7 @@ This repository hosts multiple projects, each maintained in its own branch:
 - `ubuntu:24.04` image equipped with Java 8 and Kotlin.
 - Enhanced environment with the latest Gradle and SQLite JDBC package within a Gradle project (`build.gradle`).
 - Includes a `HelloWorld` example, demonstrating execution via CMD and Gradle.
-- Integrated `docker-compose` configuration for streamlined deployment.
+- `docker-compose` configuration
 
 ---
 
@@ -24,8 +24,9 @@ This repository hosts multiple projects, each maintained in its own branch:
 
 ### Key Features
 
-- A product controller has been created.
+- Create product controller.
 - The controller includes endpoints following CRUD principles, with data retrieved from a list.
+- Create category and cart controllers + endpoints following CRUD principles.
 
 ---
 
