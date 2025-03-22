@@ -165,7 +165,7 @@ class ProductController @Inject()(val controllerComponents: ControllerComponents
   }
   
   // Helper methods
-  private def findProductById(id: Int): Option[Product] = {
+  def findProductById(id: Int): Option[Product] = {
     products.find(_.id == id)
   }
   

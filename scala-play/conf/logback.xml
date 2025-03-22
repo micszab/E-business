@@ -41,6 +41,18 @@
 
   <logger name="play" level="INFO"/>
   <logger name="application" level="DEBUG"/>
+  
+  <!-- Controller loggers -->
+  <logger name="controllers.ProductController" level="DEBUG"/>
+  <logger name="controllers.CategoryController" level="DEBUG"/>
+  <logger name="controllers.CartController" level="DEBUG"/>
+  
+  <!-- HTTP request -->
+  <logger name="play.api.mvc.Action" level="INFO"/>
+  
+  <!-- Api request/response -->
+  <logger name="play.api.mvc.RequestHeader" level="INFO"/>
+  <logger name="play.api.mvc.Result" level="INFO"/>
 
   <root level="WARN">
     <appender-ref ref="ASYNCFILE"/>

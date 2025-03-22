@@ -1,7 +1,7 @@
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-# Routes
+# Product Routes
 GET     /products                   controllers.ProductController.getAll
 GET     /products/category/:category controllers.ProductController.getByCategory(category: String)
 GET     /products/instock           controllers.ProductController.getInStock
@@ -10,3 +10,18 @@ GET     /products/:id               controllers.ProductController.getById(id: In
 POST    /products                   controllers.ProductController.add
 PUT     /products/:id               controllers.ProductController.update(id: Int)
 DELETE  /products/:id               controllers.ProductController.delete(id: Int)
+
+# Category Routes
+GET     /categories                 controllers.CategoryController.getAll
+GET     /categories/:id             controllers.CategoryController.getById(id: Int)
+POST    /categories                 controllers.CategoryController.add
+PUT     /categories/:id             controllers.CategoryController.update(id: Int)
+DELETE  /categories/:id             controllers.CategoryController.delete(id: Int)
+
+# Cart Routes
+GET     /carts                      controllers.CartController.getAll
+GET     /carts/:id                  controllers.CartController.getById(id: String)
+POST    /carts                      controllers.CartController.create
+PUT     /carts/:id/items            controllers.CartController.addItem(id: String)
+DELETE  /carts/:id/items/:productId controllers.CartController.removeItem(id: String, productId: Int)
+DELETE  /carts/:id                  controllers.CartController.clearCart(id: String)
