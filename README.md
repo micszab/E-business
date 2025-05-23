@@ -12,6 +12,7 @@
 
 branch: 1_Docker 
 
+
 **Zadanie 2** Scala
 
 :white_check_mark: 3.0 Należy stworzyć kontroler do Produktów
@@ -26,6 +27,7 @@ branch: 1_Docker
 
 branch: 2_Scala
 
+
 **Zadanie 3** Kotlin
 
 :white_check_mark: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord
@@ -39,3 +41,80 @@ branch: 2_Scala
 :x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex
 
 branch: 3_Kotlin
+
+
+**Zadanie 4** Go
+
+:x: 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie
+miała kontroler Produktów zgodny z CRUD
+
+:x: 3.5 Należy stworzyć model Produktów wykorzystując gorm oraz
+wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast
+listy)
+
+:x: 4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint
+
+:x: 4.5 Należy stworzyć model kategorii i dodać relację między kategorią,
+a produktem
+
+:x: 5.0 pogrupować zapytania w gorm’owe scope'y
+
+branch: 
+
+
+**Zadanie 5** Frontend
+
+:x: 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz
+Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w
+Produktach powinniśmy pobierać dane o produktach z aplikacji
+serwerowej;
+
+:x: 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing
+
+:x: 4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za
+pomocą React hooks
+
+:x: 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz
+kliencką na dockerze via docker-compose
+
+:x: 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
+
+branch: 
+
+
+**Zadanie 6** Testy
+
+:x: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+(Kotlin, Python, Java, JS, Go, Scala)
+
+:x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+asercji
+
+:x: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 50 asercjami
+
+:x: 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpoint
+
+:x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+
+branch: 
+
+**Zadanie 7** Sonar
+
+:x: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+hookach gita
+
+:x: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji serwerowej)
+
+:x: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji serwerowej)
+
+:x: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji serwerowej)
+
+:x: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+aplikacji klienckiej
+
+branch: 
