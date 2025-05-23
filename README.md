@@ -1,37 +1,41 @@
-# Repository Overview
+**Zadanie 1** Docker
 
-This repository hosts multiple projects, each maintained in its own branch:
+:white_check_mark: 3.0 obraz ubuntu z Pythonem w wersji 3.10
 
-- **1_Docker**: Provides Docker images tailored for various development environments.
-- **2_Scala**: Implements a web application using the Play framework in Scala 3.
-- **3_Kotlin**: Develops a client application in Kotlin using the Ktor framework for integration with Discord.
+:white_check_mark: 3.5 obraz ubuntu:24.02 z Javą w wersji 8 oraz Kotlinem,
 
----
+:white_check_mark: 4.0 do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC SQLite w ramach projektu na Gradle (build.gradle)
 
-## 1_Docker: Containerized Environments
+:white_check_mark: 4.5 stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji przez CMD oraz gradle
 
-### Key Features
+:white_check_mark: 5.0 dodać konfigurację docker-compose
 
-- Ubuntu-based image with Python 3.10.
-- `ubuntu:24.04` image equipped with Java 8 and Kotlin.
-- Enhanced environment with the latest Gradle and SQLite JDBC package within a Gradle project (`build.gradle`).
-- Includes a `HelloWorld` example, demonstrating execution via CMD and Gradle.
-- Integrated `docker-compose` configuration for streamlined deployment.
+branch: 1_Docker 
 
----
+**Zadanie 2** Scala
 
-## 2_Scala: Web Application
+:white_check_mark: 3.0 Należy stworzyć kontroler do Produktów
 
-### Key Features
+:white_check_mark: 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane pobierane z listy
 
-- A product controller has been created.
-- The controller includes endpoints following CRUD principles, with data retrieved from a list.
+:x: 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy zgodnie z CRUD
 
----
+:x: 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać skrypt uruchamiający aplikację via ngrok (nie podawać tokena ngroka w gotowym rozwiązaniu)
 
-## 3_Kotlin: Discord Client Application
+:x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
 
-### Key Features
+branch: 2_Scala
 
-- A client application developed in Kotlin using the Ktor framework, enabling message transmission to Discord.
-- Supports bidirectional communication, allowing the application (bot) to receive and respond to user messages from Discord.
+**Zadanie 3** Kotlin
+
+:white_check_mark: 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord
+
+:white_check_mark: 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota)
+
+:x: 4.0 Zwróci listę kategorii na określone żądanie użytkownika
+
+:x: 4.5 Zwróci listę produktów wg żądanej kategorii
+
+:x: 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex
+
+branch: 3_Kotlin
