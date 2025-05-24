@@ -1,0 +1,90 @@
+.products-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.products-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px; /* Zwiększony padding, bo nie ma obrazka */
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px; /* Dodane, aby karty miały podobną wysokość */
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Usunięto sekcję .product-card img {} */
+
+.product-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #34495e;
+    min-height: 2.8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    min-height: 3em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card .price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #ecf0f1;
+    width: 100%;
+}
+
+.products-container.error {
+    color: #e74c3c;
+    background-color: #fbe6e6;
+    border: 1px solid #e74c3c;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
