@@ -1,9 +1,11 @@
 import React from 'react';
 import { useProducts } from '../hooks/useProducts';
+import { useCart } from '../context/CartContext'; // Importujemy hook koszyka
 import './Products.css';
 
 const Products = () => {
     const { products, loading, error } = useProducts();
+    const { addToCart } = useCart(); // Używamy funkcji addToCart z kontekstu
 
     if (loading) {
         return <div className="products-container">Ładowanie produktów...</div>;
@@ -22,6 +24,12 @@ const Products = () => {
                         <h3>{product.name}</h3>
                         <p>{product.description}</p>
                         <p className="price">{product.price.toFixed(2)} PLN</p>
+                        <button
+                            className="add-to-cart-button"
+                            onClick={() => addToCart(product)}
+                        >
+                            Dodaj do koszyka
+                        </button>
                     </div>
                 ))}
             </div>
