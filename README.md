@@ -84,10 +84,10 @@ branch: 5_Frontend
 
 **Zadanie 6** Testy
 
-:x: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+:white_check_mark: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
 
-:x: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+:white_check_mark: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
 asercji
 
 :x: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
@@ -98,7 +98,7 @@ minimum jednym scenariuszem negatywnym per endpoint
 
 :x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
 
-branch: 
+branch: 6_Testy
 
 **Zadanie 7** Sonar
 
